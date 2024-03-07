@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./styles/fonts.scss";
+@import "./styles/functions/_index";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.75rem;
+    transition: 0.2s;
+
+    &-track {
+      background: transparent;
+    }
+
+    &-thumb {
+      background: gray;
+      border-radius: 20px;
+    }
+  }
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+}
